@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "SteamDB Parser",
+    "version": "1.0",
+    "description": "Parse SteamDB data",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      //"default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://steamdb.info/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
