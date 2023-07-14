@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>SteamDB Parser Results</title>
-  <style>
-    table {
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-    }
-  </style>
-</head>
-<body>
-  <h1>SteamDB Parser Results</h1>
-  <table id="results-table">
-    <tr>
-      <th>AppID</th>
-      <th>Followers</th>
-    </tr>
-  </table>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <title>SteamDB Parser Extension</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>SteamDB Parser</h1>
+    <table id="followers-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Followers</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody id="followers-body">
+        <!-- Followers will be dynamically added here -->
+      </tbody>
+    </table>
+  </body>
 </html>
