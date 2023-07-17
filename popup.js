@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
       var nameCell = document.createElement('td');
       var followersCell = document.createElement('td');
       var linkCell = document.createElement('td');
-      var link = document.createElement('a');
+      var link = document.createElement('button');
+      link.classList.add('btn');
+      followersCell.classList.add('text-success');
   
       nameCell.textContent = follower.name;
       followersCell.textContent = follower.followers;
